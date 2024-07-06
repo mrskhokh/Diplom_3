@@ -1,4 +1,4 @@
-package stellarburgers.yandex;
+package web_pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;

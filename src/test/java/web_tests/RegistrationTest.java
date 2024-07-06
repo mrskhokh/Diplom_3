@@ -1,3 +1,6 @@
+package web_tests;
+
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -5,14 +8,16 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import stellarburgers.yandex.RegistrationPage;
+import web_pages.RegistrationPage;
+import web_test_utils.AbstractTest;
+import web_test_utils.TestUtils;
+import web_test_utils.User;
 
 import java.util.Arrays;
 import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class RegistrationTest extends AbstractTest {
-    private final Browser browser;
     private final String name;
     private final String email;
     private final String password;
@@ -20,8 +25,7 @@ public class RegistrationTest extends AbstractTest {
 
     WebDriver driver;
 
-    public RegistrationTest(Browser browser, String name, String email, String password, Boolean success) {
-        this.browser = browser;
+    public RegistrationTest( String name, String email, String password, Boolean success) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -31,23 +35,18 @@ public class RegistrationTest extends AbstractTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {Browser.CHROME, "Иванов Иван",
+                { "Иванов Иван",
                         TestUtils.generateRandomNumbers(4) + "mrskhokhkhokh@ya.ru", "12345678", true},
-                {Browser.CHROME, "Иванов Иван",
-                        TestUtils.generateRandomNumbers(4) + "mrskhokhkhokh@ya.ru", "123", false},
-                {Browser.YA, "Иванов Иван",
-                        TestUtils.generateRandomNumbers(4) + "mrskhokhkhokh@ya.ru", "12345678", true},
-                {Browser.YA, "Иванов Иван",
+                { "Иванов Иван",
                         TestUtils.generateRandomNumbers(4) + "mrskhokhkhokh@ya.ru", "123", false}
         });
     }
-
+    @DisplayName("Тест регистрации")
     @Test
     public void registrationTestCases() {
-        driver = getDriver(browser);
+        driver = getDriver();
         // переход на страницу регистрации приложения
-        String url = "https://stellarburgers.nomoreparties.site/register";
-        driver.get(url);
+        driver.get(AbstractTest.registrationPageUrl);
         //Создаем объект страницы
         RegistrationPage registrationPage = new RegistrationPage(driver);
         registrationPage.setName(name);
@@ -61,6 +60,7 @@ public class RegistrationTest extends AbstractTest {
                 Assert.fail(e.getMessage());
             }
             driver.findElement(By.xpath("//h2[text()='Вход']"));
+
             System.out.println("Пользователь успешно зарегистрирован");
             String token = User.login(email, password);
 

@@ -1,3 +1,5 @@
+package web_test_utils;
+
 import io.qameta.allure.Step;
 
 import java.util.Random;

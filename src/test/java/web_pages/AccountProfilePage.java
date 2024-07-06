@@ -1,12 +1,21 @@
-package stellarburgers.yandex;
+package web_pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class AccountProfilePage {
+    public By getNameField() {
+        return nameField;
+    }
+
     private final By nameField = By.xpath("//input[@name='Name']");
     private final By constructorLink = By.xpath("//p[text()='Конструктор']");
+
+    public By getLogoutButton() {
+        return logoutButton;
+    }
+
     private final By logoutButton = By.xpath("//button[text()='Выход']");
 
     private final WebDriver driver;

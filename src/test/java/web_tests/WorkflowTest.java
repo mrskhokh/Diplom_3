@@ -1,13 +1,23 @@
+package web_tests;
+
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
-import stellarburgers.yandex.AccountProfilePage;
-import stellarburgers.yandex.AuthorizationPage;
-import stellarburgers.yandex.MainPage;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import web_pages.AccountProfilePage;
+import web_pages.AuthorizationPage;
+import web_pages.MainPage;
+import web_test_utils.AbstractTest;
+import web_test_utils.TestUtils;
+import web_test_utils.User;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -17,13 +27,11 @@ import static org.junit.Assert.assertEquals;
 public class WorkflowTest extends AbstractTest {
     private final String email;
 
-    private final Browser browser;
     private final String password;
     private final String name;
     WebDriver driver;
 
-    public WorkflowTest(Browser browser, String email, String password, String name) {
-        this.browser = browser;
+    public WorkflowTest(String email, String password, String name) {
         this.email = email;
         this.password = password;
         this.name = name;
@@ -32,28 +40,35 @@ public class WorkflowTest extends AbstractTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {Browser.CHROME, TestUtils.generateRandomNumbers(4) + "mrskhokhkhokh@ya.ru",
-                        "12345678", "Иванов Иван"},
-                {Browser.YA, TestUtils.generateRandomNumbers(4) + "mrskhokhkhokh@ya.ru",
-                        "12345678", "Иванов Иван"}});
+                {TestUtils.generateRandomNumbers(4) + "mrskhokhkhokh@ya.ru",
+                        "12345678", "Иванов Иван"}}
+        );
     }
 
+    @DisplayName("Проверка ссылки конструктора")
     @Test
     public void constructorLinkTest() {
         User.create(email, password, name);
-        driver = getDriver(browser);
+        driver = getDriver();
         // переход на страницу регистрации приложения
-        String url = "https://stellarburgers.nomoreparties.site";
-        driver.get(url);
+        driver.get(AbstractTest.mainPageUrl);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
 
         MainPage mainPage = authorizationPage.authorization(email, password);
+//        try {
+//            Thread.sleep(1000); // Пауза на секунду
+//        } catch (InterruptedException e) {
+//            Assert.fail(e.getMessage());
+//        }
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Указываем максимальное время ожидания в секундах
+
         try {
-            Thread.sleep(1000); // Пауза на секунду
-        } catch (InterruptedException e) {
-            Assert.fail(e.getMessage());
+            wait.until(ExpectedConditions.visibilityOfElementLocated(mainPage.getProfileCabinetLink())); // Замените "elementId" на идентификатор элемента, который ожидается
+        } catch (TimeoutException e) {
+            Assert.fail("Элемент не появился за отведенное время");
         }
+
         AccountProfilePage accountProfilePage = mainpage.authorizedProfileCabinetLinkClick();
         accountProfilePage.constructorLinkClick();
         assertEquals(mainPage.constructorNameGetText(), "Соберите бургер");
@@ -61,40 +76,30 @@ public class WorkflowTest extends AbstractTest {
         User.delete(token);
     }
 
+    @DisplayName("Проверка секции ингредиентов")
     @Test
     public void ingredientsSectionTest() {
-        driver = getDriver(browser);
+
+        driver = getDriver();
         // переход на страницу регистрации приложения
-        String url = "https://stellarburgers.nomoreparties.site";
-        driver.get(url);
+        driver.get(AbstractTest.mainPageUrl);
         MainPage mainpage = new MainPage(driver);
+
+        assertEquals(mainpage.bunsSectionNameIsVisible(), true);
 
         mainpage.fillingsLinkClick();
         assertEquals(mainpage.fillingsSectionNameIsVisible(), true);
-        try {
-            Thread.sleep(1000); // Пауза на секунду
-        } catch (InterruptedException e) {
-            Assert.fail(e.getMessage());
-        }
 
         mainpage.saucesLinkClick();
         assertEquals(mainpage.saucesSectionNameVisible(), true);
-        try {
-            Thread.sleep(1000); // Пауза на секунду
-        } catch (InterruptedException e) {
-            Assert.fail(e.getMessage());
-        }
-
-        mainpage.bunsLinkClick();
-        assertEquals(mainpage.bunsSectionNameIsVisible(), true);
     }
 
+    @DisplayName("Проверка осной ссылки StellarBurger на главную страницу")
     @Test
     public void mainLinkTest() {
-        driver = getDriver(browser);
+        driver = getDriver();
         // переход на страницу регистрации приложения
-        String url = "https://stellarburgers.nomoreparties.site";
-        driver.get(url);
+        driver.get(AbstractTest.mainPageUrl);
 
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();

@@ -1,18 +1,25 @@
-package stellarburgers.yandex;
+package web_pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class MainPage {
+
+
     private final By profileCabinetLink = By.xpath("//a[@class='AppHeader_header__link__3D_hX' and p[contains(text(),'Личный Кабинет')]]");
     private final By accountEnterButton = By.xpath("//button[contains(text(),'Войти в аккаунт') and contains(@class, 'button_button__33qZ0')]");
+
     private final By bunsLink = By.xpath("//div[contains(@class, 'tab_tab') and .//span[contains(@class, 'text') and text()='Булки']]");
+
     private final By saucesLink = By.xpath("//div[contains(@class, 'tab_tab') and .//span[contains(@class, 'text') and text()='Соусы']]");
+
     private final By fillingsLink = By.xpath("//div[contains(@class, 'tab_tab') and .//span[contains(@class, 'text') and text()='Начинки']]");
 
     private final By bunsSectionName = By.xpath("//h2[text()='Булки']");
+
     private final By saucesSectionName = By.xpath("//h2[text()='Соусы']");
+
     private final By fillingsSectionName = By.xpath("//h2[text()='Начинки']");
 
     private final WebDriver driver;
@@ -21,6 +28,12 @@ public class MainPage {
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
+    }
+
+
+
+    public By getProfileCabinetLink() {
+        return profileCabinetLink;
     }
 
     @Step("Клик по кнопке 'Личный кабинет'")
@@ -46,10 +59,6 @@ public class MainPage {
         return driver.findElement(constructorName).getText();
     }
 
-    @Step("Клик по 'Булки'")
-    public void bunsLinkClick() {
-        driver.findElement(bunsLink).click();
-    }
 
     @Step("Клик по 'Соусы'")
     public void saucesLinkClick() {

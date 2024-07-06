@@ -1,38 +1,39 @@
+package web_test_utils;
+
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
+import org.json.JSONObject;
 
 import static io.restassured.RestAssured.given;
 
-public class User {
+public class User extends AbstractTest {
+
 
     @Step("Создание пользователя по API")
     public static void create(String email, String password, String name) {
 
-        String json = "{\n" +
-                "\"email\": \"" + email + "\",\n" +
-                "\"password\": \"" + password + "\",\n" +
-                "\"name\": \"" + name + "\"\n" +
-                "}";
+        JSONObject requestBody = new JSONObject();
+        requestBody.put("email", email);
+        requestBody.put("password", password);
+        requestBody.put("name", name);
 
         given()
                 .header("Content-type", "application/json")
-                .body(json)
+                .body(requestBody.toString())
                 .when()
-                .post("https://stellarburgers.nomoreparties.site/api/auth/register");
-
+                .post(AbstractTest.apiRegisterUrl);
     }
 
     @Step("Вход поль зователя по API")
     public static String login(String email, String password) {
-        String json = "{\n" +
-                "\"email\": \"" + email + "\",\n" +
-                "\"password\": \"" + password + "\"\n" +
-                "}";
+        JSONObject requestBody = new JSONObject();
+        requestBody.put("email", email);
+        requestBody.put("password", password);
         Response response = given()
                 .header("Content-type", "application/json")
-                .body(json)
+                .body(requestBody.toString())
                 .when()
-                .post("https://stellarburgers.nomoreparties.site/api/auth/login");
+                .post(AbstractTest.apiLoginUrl);
 
         return response.getBody()
                 .jsonPath()
@@ -47,7 +48,7 @@ public class User {
         given()
                 .auth().oauth2(accessCode)
                 .when()
-                .delete("https://stellarburgers.nomoreparties.site/api/auth/user");
+                .delete(AbstractTest.apiDeleteUserUrl);
 
     }
 }

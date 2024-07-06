@@ -1,4 +1,4 @@
-package stellarburgers.yandex;
+package web_pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -8,9 +8,16 @@ public class AuthorizationPage {
     private final By emailField = By.xpath("//label[text()='Email']/following-sibling::input");
     private final By passwordFiled = By.xpath("//label[text()='Пароль']/following-sibling::input");
     private final By loginButton = By.xpath("//button[text()='Войти']");
+
+    public By getEnterScript() {
+        return enterScript;
+    }
+
     private final By enterScript = By.xpath("//h2[text()='Вход']");
     private final By slellarBurgerLink = By.xpath("//a[@class='AppHeader_header__link__3D_hX' and @href='/']");
     private final WebDriver driver;
+
+
 
     public AuthorizationPage(WebDriver driver) {
         this.driver = driver;
