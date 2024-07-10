@@ -51,7 +51,7 @@ public class WorkflowTest extends AbstractTest {
         User.create(email, password, name);
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(AbstractTest.mainPageUrl);
+        driver.get(AbstractTest.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
 
@@ -82,7 +82,7 @@ public class WorkflowTest extends AbstractTest {
 
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(AbstractTest.mainPageUrl);
+        driver.get(AbstractTest.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
 
         assertEquals(mainpage.bunsSectionNameIsVisible(), true);
@@ -99,7 +99,7 @@ public class WorkflowTest extends AbstractTest {
     public void mainLinkTest() {
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(AbstractTest.mainPageUrl);
+        driver.get(AbstractTest.MAIN_PAGE_URL);
 
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();

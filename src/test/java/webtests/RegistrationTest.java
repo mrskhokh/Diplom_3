@@ -46,7 +46,7 @@ public class RegistrationTest extends AbstractTest {
     public void registrationTestCases() {
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(AbstractTest.registrationPageUrl);
+        driver.get(AbstractTest.REGISTRATION_PAGE_URL);
         //Создаем объект страницы
         RegistrationPage registrationPage = new RegistrationPage(driver);
         registrationPage.setName(name);

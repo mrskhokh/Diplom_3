@@ -21,7 +21,7 @@ public class User extends AbstractTest {
                 .header("Content-type", "application/json")
                 .body(requestBody.toString())
                 .when()
-                .post(AbstractTest.apiRegisterUrl);
+                .post(AbstractTest.API_REGISTER_URL);
     }
 
     @Step("Вход поль зователя по API")
@@ -33,7 +33,7 @@ public class User extends AbstractTest {
                 .header("Content-type", "application/json")
                 .body(requestBody.toString())
                 .when()
-                .post(AbstractTest.apiLoginUrl);
+                .post(AbstractTest.API_LOGIN_URL);
 
         return response.getBody()
                 .jsonPath()
@@ -48,7 +48,7 @@ public class User extends AbstractTest {
         given()
                 .auth().oauth2(accessCode)
                 .when()
-                .delete(AbstractTest.apiDeleteUserUrl);
+                .delete(AbstractTest.API_DELETE_USER_URL);
 
     }
 }

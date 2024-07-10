@@ -55,7 +55,7 @@ public class UserLoginTest extends AbstractTest {
         driver = getDriver();
 
         // переход на страницу регистрации приложения
-        driver.get(AbstractTest.mainPageUrl);
+        driver.get(AbstractTest.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.accountEnterButtonClick();
         authorizationPage.setEmail(email);
@@ -77,7 +77,7 @@ public class UserLoginTest extends AbstractTest {
     public void mainPageProfileCabinetLoginTest() {
         User.create(email, password, name);
         driver = getDriver();
-        driver.get(AbstractTest.mainPageUrl);
+        driver.get(AbstractTest.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
         authorizationPage.setEmail(email);
@@ -100,7 +100,7 @@ public class UserLoginTest extends AbstractTest {
     public void registrationPageLoginTest() {
         User.create(email, password, name);
         driver = getDriver();
-        driver.get(AbstractTest.registrationPageUrl);
+        driver.get(AbstractTest.REGISTRATION_PAGE_URL);
         RegistrationPage registrationPage = new RegistrationPage(driver);
         AuthorizationPage authorizationPage = registrationPage.loginLinkClick();
         authorizationPage.setEmail(email);
@@ -122,7 +122,7 @@ public class UserLoginTest extends AbstractTest {
     public void userLogoutTest() {
         User.create(email, password, name);
         driver = getDriver();
-        driver.get(AbstractTest.mainPageUrl);
+        driver.get(AbstractTest.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
         authorizationPage.setEmail(email);
