@@ -1,4 +1,4 @@
-package web_tests;
+package webtests;
 
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
@@ -10,12 +10,12 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import web_pages.AccountProfilePage;
-import web_pages.AuthorizationPage;
-import web_pages.MainPage;
-import web_test_utils.AbstractTest;
-import web_test_utils.TestUtils;
-import web_test_utils.User;
+import webpages.AccountProfilePage;
+import webpages.AuthorizationPage;
+import webpages.MainPage;
+import webtestutils.AbstractTest;
+import webtestutils.TestUtils;
+import webtestutils.User;
 
 import java.time.Duration;
 import java.util.Arrays;

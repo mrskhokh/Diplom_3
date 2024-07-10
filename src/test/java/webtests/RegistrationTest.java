@@ -1,4 +1,4 @@
-package web_tests;
+package webtests;
 
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
@@ -8,10 +8,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import web_pages.RegistrationPage;
-import web_test_utils.AbstractTest;
-import web_test_utils.TestUtils;
-import web_test_utils.User;
+import webpages.RegistrationPage;
+import webtestutils.AbstractTest;
+import webtestutils.TestUtils;
+import webtestutils.User;
 
 import java.util.Arrays;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package web_pages;
+package webpages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;

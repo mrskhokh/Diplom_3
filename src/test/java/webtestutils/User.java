@@ -1,4 +1,4 @@
-package web_test_utils;
+package webtestutils;
 
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
