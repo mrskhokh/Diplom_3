@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3593b-5aef-4fe3-8949-836f9c8b0005" name="Changes" comment="sleeps and locator removed">
+    <list default="true" id="1eb3593b-5aef-4fe3-8949-836f9c8b0005" name="Changes" comment="expected and actual asserts changed">
+      <change afterPath="$PROJECT_DIR$/target/allure-results/1b913196-2c4e-4d8d-b8f3-2515a258a4d0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/6a7283bd-87d4-4876-a187-08f4931475b5-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/895b15c1-9670-444b-939d-e579e99bfcee-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/8a41af65-6799-4fe8-806f-f581656f1bd4-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/c2573fc2-65df-48f3-937a-0b08ed25c83d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/c60ffd35-7aba-4cad-a8af-341f63901264-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/c7393d87-be16-4ec5-89f5-e401f8e68474-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/d5a9af58-bc51-4e01-98d4-79667ce66aa2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/allure-results/e10b28b5-ae05-415d-bc21-f21ea9a8b414-result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/WorkflowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/WorkflowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/allure.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,45 +44,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.RegistrationTest.RegistrationTestCases.executor": "Run",
-    "JUnit.RegistrationTest.executor": "Run",
-    "JUnit.RegistrationTest.registrationTestCases.executor": "Run",
-    "JUnit.UserLoginTest.MainPadeProfileCabenetLoginTest.executor": "Run",
-    "JUnit.UserLoginTest.MainPageProfileCabenetLoginTest.executor": "Run",
-    "JUnit.UserLoginTest.MainPageProfileCabinetLoginTest.executor": "Run",
-    "JUnit.UserLoginTest.RegistrationPageLoginTest.executor": "Run",
-    "JUnit.UserLoginTest.executor": "Run",
-    "JUnit.UserLoginTest.mainPageProfileCabenetLoginTest (1).executor": "Debug",
-    "JUnit.UserLoginTest.mainPageProfileCabenetLoginTest.executor": "Run",
-    "JUnit.UserLoginTest.mainPageProfileCabinetLoginTest.executor": "Run",
-    "JUnit.UserLoginTest.userLogoutTest.executor": "Run",
-    "JUnit.WorkflowTest.ConstructorLinkTest.executor": "Run",
-    "JUnit.WorkflowTest.constructorLinkTest.executor": "Run",
-    "JUnit.WorkflowTest.executor": "Run",
-    "JUnit.WorkflowTest.ingredientsSectionTest.executor": "Run",
-    "JUnit.WorkflowTest.mainLinkTest.executor": "Run",
-    "JUnit.java in Diplom_3.executor": "Run",
-    "JUnit.web_tests in Diplom_3.executor": "Run",
-    "Maven.Diplom_3 [clean,test].executor": "Run",
-    "Maven.Diplom_3 [clean].executor": "Run",
-    "Maven.Diplom_3 [compile].executor": "Run",
-    "Maven.Diplom_3 [install].executor": "Run",
-    "Maven.Diplom_3 [io.qameta.allure:allure-maven:2.10.0:install].executor": "Run",
-    "Maven.Diplom_3 [io.qameta.allure:allure-maven:2.10.0:report].executor": "Run",
-    "Maven.Diplom_3 [io.qameta.allure:allure-maven:2.10.0:serve].executor": "Run",
-    "Maven.Diplom_3 [test].executor": "Run",
-    "Maven.Diplom_3 [validate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "develop3",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/levin/IdeaProjects/Diplom_3/src/test/resources"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.RegistrationTest.RegistrationTestCases.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.registrationTestCases.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.MainPadeProfileCabenetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.MainPageProfileCabenetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.MainPageProfileCabinetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.RegistrationPageLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.mainPageProfileCabenetLoginTest (1).executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserLoginTest.mainPageProfileCabenetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.mainPageProfileCabinetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.userLogoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.ConstructorLinkTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.constructorLinkTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.ingredientsSectionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.mainLinkTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in Diplom_3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.web_tests in Diplom_3.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [clean,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [io.qameta.allure:allure-maven:2.10.0:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [io.qameta.allure:allure-maven:2.10.0:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [io.qameta.allure:allure-maven:2.10.0:serve].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop3&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/levin/IdeaProjects/Diplom_3/src/test/resources&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\levin\IdeaProjects\Diplom_3\src\test\resources" />
@@ -201,13 +208,22 @@
       <option name="project" value="LOCAL" />
       <updated>1720703254223</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="expected and actual asserts changed">
+      <option name="closed" value="true" />
+      <created>1720704595379</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720704595379</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all notes fixes" />
     <MESSAGE value="sleeps and locator removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="sleeps and locator removed" />
+    <MESSAGE value="expected and actual asserts changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="expected and actual asserts changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
