@@ -66,15 +66,15 @@ public abstract class BrowserChose {
                 options.addArguments(
                         "--no-sandbox",
                         "--headless",
-                        "--disable-dev-shm-usage"
-                );
+                       "--disable-dev-shm-usage"
+                             );
                 result = new ChromeDriver(options);
                 break;
             }
             case CHROME: {
                 System.setProperty("webdriver.chrome.driver", System.getenv("CHROME_126"));
                 ChromeOptions options = new ChromeOptions();
-                //options.addArguments("--no-sandbox", "--headless", "--disable-dev-shm-usage");
+                options.addArguments("--no-sandbox", "--headless", "--disable-dev-shm-usage");
                 result = new ChromeDriver(options);
                 break;
            }

@@ -16,7 +16,7 @@ public class MainPage {
 
     private final By fillingsLink = By.xpath("//div[contains(@class, 'tab_tab') and .//span[contains(@class, 'text') and text()='Начинки']]");
 
-    private final By bunsSectionName = By.xpath("//h2[text()='Булки']");
+    private final By bunsSectionName = By.xpath("//h2[contains(text(), 'Булки') and contains(@class, 'text text_type_main-medium mb-6 mt-10')]");
 
     private final By saucesSectionName = By.xpath("//h2[text()='Соусы']");
 
@@ -68,6 +68,11 @@ public class MainPage {
     @Step("Клик по 'Начинки'")
     public void fillingsLinkClick() {
         driver.findElement(fillingsLink).click();
+    }
+
+    @Step("Клик по 'Булки'")
+    public void bunsLinkClick() {
+        driver.findElement(bunsLink).click();
     }
 
     @Step("Проверяем наличие секции Начинки")

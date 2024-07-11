@@ -80,13 +80,16 @@ public class WorkflowTest extends BrowserChose {
         driver.get(BrowserChose.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
 
-        assertEquals(true,mainpage.bunsSectionNameIsVisible());
 
         mainpage.fillingsLinkClick();
-        assertEquals(true,mainpage.fillingsSectionNameIsVisible());
+        assertEquals(true, mainpage.fillingsSectionNameIsVisible());
+
+        mainpage.bunsLinkClick();
+        assertEquals(true, mainpage.bunsSectionNameIsVisible());
 
         mainpage.saucesLinkClick();
-        assertEquals(true,mainpage.saucesSectionNameVisible());
+        assertEquals(true, mainpage.saucesSectionNameVisible());
+
     }
 
     @DisplayName("Проверка осной ссылки StellarBurger на главную страницу")
