@@ -6,7 +6,7 @@ import org.json.JSONObject;
 
 import static io.restassured.RestAssured.given;
 
-public class User extends AbstractTest {
+public class User  {
 
 
     @Step("Создание пользователя по API")
@@ -21,7 +21,7 @@ public class User extends AbstractTest {
                 .header("Content-type", "application/json")
                 .body(requestBody.toString())
                 .when()
-                .post(AbstractTest.API_REGISTER_URL);
+                .post(BrowserChose.API_REGISTER_URL);
     }
 
     @Step("Вход поль зователя по API")
@@ -33,7 +33,7 @@ public class User extends AbstractTest {
                 .header("Content-type", "application/json")
                 .body(requestBody.toString())
                 .when()
-                .post(AbstractTest.API_LOGIN_URL);
+                .post(BrowserChose.API_LOGIN_URL);
 
         return response.getBody()
                 .jsonPath()
@@ -48,7 +48,7 @@ public class User extends AbstractTest {
         given()
                 .auth().oauth2(accessCode)
                 .when()
-                .delete(AbstractTest.API_DELETE_USER_URL);
+                .delete(BrowserChose.API_DELETE_USER_URL);
 
     }
 }

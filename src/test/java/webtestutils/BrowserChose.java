@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 
-public abstract class AbstractTest {
+public abstract class BrowserChose {
     public enum Browser {
         YA,
         CHROME
@@ -54,7 +54,7 @@ public abstract class AbstractTest {
     }
 
     @Step("Запуск браузера")
-    protected WebDriver getDriver() {
+    public WebDriver getDriver() {
         final WebDriver result;
         final Browser browser = getBrowserType();
         System.out.println("Запускаю браузер: " + browser);

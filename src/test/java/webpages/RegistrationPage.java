@@ -34,8 +34,10 @@ public class RegistrationPage {
     }
 
     @Step("Клик по кнопке 'Зарегистрироваться'")
-    public void registrationButtonClick() {
+    public AuthorizationPage registrationButtonClick() {
+
         driver.findElement(registrationButton).click();
+        return new AuthorizationPage(driver);
     }
 
     @Step("Получаем текст из сообщения о неверном пароле")

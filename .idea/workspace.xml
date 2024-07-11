@@ -6,16 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1eb3593b-5aef-4fe3-8949-836f9c8b0005" name="Changes" comment="all notes fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_pages/AccountProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webpages/AccountProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_pages/AuthorizationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webpages/AuthorizationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webpages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webpages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_test_utils/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestutils/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_test_utils/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestutils/TestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_test_utils/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestutils/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_tests/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/web_tests/WorkflowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/WorkflowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webpages/AuthorizationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webpages/AuthorizationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webpages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webpages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/WorkflowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/WorkflowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtestutils/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestutils/BrowserChose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtestutils/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestutils/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +90,7 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WorkflowTest.ingredientsSectionTest">
+  <component name="RunManager" selected="JUnit.RegistrationTest.registrationTestCases">
     <configuration name="RegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
@@ -109,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkflowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest.registrationTestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -117,9 +114,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="web_tests" />
-      <option name="MAIN_CLASS_NAME" value="webtests.WorkflowTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="webtests" />
+      <option name="MAIN_CLASS_NAME" value="webtests.RegistrationTest" />
+      <option name="METHOD_NAME" value="registrationTestCases" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegistrationTest.registrationTestCases" />
         <item itemvalue="JUnit.WorkflowTest.ingredientsSectionTest" />
         <item itemvalue="JUnit.RegistrationTest" />
         <item itemvalue="JUnit.web_tests in Diplom_3" />
         <item itemvalue="JUnit.WorkflowTest.constructorLinkTest" />
-        <item itemvalue="JUnit.WorkflowTest" />
       </list>
     </recent_temporary>
   </component>

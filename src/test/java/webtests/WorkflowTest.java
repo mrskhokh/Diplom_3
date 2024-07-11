@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import webpages.AccountProfilePage;
 import webpages.AuthorizationPage;
 import webpages.MainPage;
-import webtestutils.AbstractTest;
+import webtestutils.BrowserChose;
 import webtestutils.TestUtils;
 import webtestutils.User;
 
@@ -24,7 +24,7 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class WorkflowTest extends AbstractTest {
+public class WorkflowTest extends BrowserChose {
     private final String email;
 
     private final String password;
@@ -51,7 +51,7 @@ public class WorkflowTest extends AbstractTest {
         User.create(email, password, name);
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(AbstractTest.MAIN_PAGE_URL);
+        driver.get(BrowserChose.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
 
@@ -82,7 +82,7 @@ public class WorkflowTest extends AbstractTest {
 
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(AbstractTest.MAIN_PAGE_URL);
+        driver.get(BrowserChose.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
 
         assertEquals(mainpage.bunsSectionNameIsVisible(), true);
@@ -99,7 +99,7 @@ public class WorkflowTest extends AbstractTest {
     public void mainLinkTest() {
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(AbstractTest.MAIN_PAGE_URL);
+        driver.get(BrowserChose.MAIN_PAGE_URL);
 
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();

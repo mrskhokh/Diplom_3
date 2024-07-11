@@ -7,17 +7,25 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import webpages.AuthorizationPage;
 import webpages.RegistrationPage;
-import webtestutils.AbstractTest;
+import webtestutils.BrowserChose;
 import webtestutils.TestUtils;
 import webtestutils.User;
 
+
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.Collection;
 
+import static org.junit.Assert.assertEquals;
+
 @RunWith(Parameterized.class)
-public class RegistrationTest extends AbstractTest {
+public class RegistrationTest extends BrowserChose {
     private final String name;
     private final String email;
     private final String password;
@@ -25,7 +33,7 @@ public class RegistrationTest extends AbstractTest {
 
     WebDriver driver;
 
-    public RegistrationTest( String name, String email, String password, Boolean success) {
+    public RegistrationTest(String name, String email, String password, Boolean success) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -46,21 +54,21 @@ public class RegistrationTest extends AbstractTest {
     public void registrationTestCases() {
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(AbstractTest.REGISTRATION_PAGE_URL);
+        driver.get(BrowserChose.REGISTRATION_PAGE_URL);
         //Создаем объект страницы
         RegistrationPage registrationPage = new RegistrationPage(driver);
         registrationPage.setName(name);
         registrationPage.setEmail(email);
         registrationPage.setPassword(password);
         if (success) {
-            registrationPage.registrationButtonClick();
+            AuthorizationPage authorizationPage =  registrationPage.registrationButtonClick();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             try {
-                Thread.sleep(1000); // Пауза на секунду
-            } catch (InterruptedException e) {
-                Assert.fail(e.getMessage());
+                wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(authorizationPage.getEnterInscript())); // Замените "elementId" на идентификатор элемента, который ожидается
+            } catch (TimeoutException e) {
+                Assert.fail("Элемент не появился за отведенное время");
             }
-            driver.findElement(By.xpath("//h2[text()='Вход']"));
-
+            driver.findElement(authorizationPage.getEnterInscript());
             System.out.println("Пользователь успешно зарегистрирован");
             String token = User.login(email, password);
 

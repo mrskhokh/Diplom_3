@@ -15,8 +15,13 @@ public class AuthorizationPage {
 
     private final By enterScript = By.xpath("//h2[text()='Вход']");
     private final By slellarBurgerLink = By.xpath("//a[@class='AppHeader_header__link__3D_hX' and @href='/']");
+
+    private final By enterInscript = By.xpath("//h2[text()='Вход']");
     private final WebDriver driver;
 
+    public By getEnterInscript() {
+        return enterInscript;
+    }
 
 
     public AuthorizationPage(WebDriver driver) {
