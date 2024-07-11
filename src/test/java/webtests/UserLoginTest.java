@@ -69,7 +69,7 @@ public class UserLoginTest extends BrowserChose {
         } catch (TimeoutException e) {
             Assert.fail("Элемент не появился за отведенное время");
         }
-        assertEquals(accountProfilePage.getNameValue(), name);
+        assertEquals(name,accountProfilePage.getNameValue());
     }
 
     @DisplayName("Тест входа в личный кабинет с главный страницы")
@@ -91,7 +91,7 @@ public class UserLoginTest extends BrowserChose {
         } catch (TimeoutException e) {
             Assert.fail("Элемент не появился за отведенное время");
         }
-        assertEquals(accountProfilePage.getNameValue(), name);
+        assertEquals(name,accountProfilePage.getNameValue());
     }
 
 
@@ -114,7 +114,7 @@ public class UserLoginTest extends BrowserChose {
         } catch (TimeoutException e) {
             Assert.fail("Элемент не появился за отведенное время");
         }
-        assertEquals(accountProfilePage.getNameValue(), name);
+        assertEquals(name,accountProfilePage.getNameValue());
     }
 
     @Test
@@ -143,7 +143,7 @@ public class UserLoginTest extends BrowserChose {
         } catch (TimeoutException e) {
             Assert.fail("Элемент не появился за отведенное время");
         }
-        assertEquals(authorizationPage.enterScriptGetText(), "Вход");
+        assertEquals("Вход",authorizationPage.enterScriptGetText());
     }
 
     @After

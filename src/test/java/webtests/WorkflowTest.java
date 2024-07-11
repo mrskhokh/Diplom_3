@@ -56,11 +56,6 @@ public class WorkflowTest extends BrowserChose {
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
 
         MainPage mainPage = authorizationPage.authorization(email, password);
-//        try {
-//            Thread.sleep(1000); // Пауза на секунду
-//        } catch (InterruptedException e) {
-//            Assert.fail(e.getMessage());
-//        }
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Указываем максимальное время ожидания в секундах
 
         try {
@@ -71,7 +66,7 @@ public class WorkflowTest extends BrowserChose {
 
         AccountProfilePage accountProfilePage = mainpage.authorizedProfileCabinetLinkClick();
         accountProfilePage.constructorLinkClick();
-        assertEquals(mainPage.constructorNameGetText(), "Соберите бургер");
+        assertEquals("Соберите бургер",mainPage.constructorNameGetText());
         String token = User.login(email, password);
         User.delete(token);
     }
@@ -85,13 +80,13 @@ public class WorkflowTest extends BrowserChose {
         driver.get(BrowserChose.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
 
-        assertEquals(mainpage.bunsSectionNameIsVisible(), true);
+        assertEquals(true,mainpage.bunsSectionNameIsVisible());
 
         mainpage.fillingsLinkClick();
-        assertEquals(mainpage.fillingsSectionNameIsVisible(), true);
+        assertEquals(true,mainpage.fillingsSectionNameIsVisible());
 
         mainpage.saucesLinkClick();
-        assertEquals(mainpage.saucesSectionNameVisible(), true);
+        assertEquals(true,mainpage.saucesSectionNameVisible());
     }
 
     @DisplayName("Проверка осной ссылки StellarBurger на главную страницу")
@@ -104,7 +99,7 @@ public class WorkflowTest extends BrowserChose {
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
         MainPage mainPage = authorizationPage.stellarBurgerLinkClick();
-        assertEquals(mainPage.constructorNameGetText(), "Соберите бургер");
+        assertEquals("Соберите бургер",mainPage.constructorNameGetText());
     }
 
 

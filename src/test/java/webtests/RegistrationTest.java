@@ -64,11 +64,11 @@ public class RegistrationTest extends BrowserChose {
             AuthorizationPage authorizationPage =  registrationPage.registrationButtonClick();
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             try {
-                wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(authorizationPage.getEnterInscript())); // Замените "elementId" на идентификатор элемента, который ожидается
+                wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(authorizationPage.getEnterScript())); // Замените "elementId" на идентификатор элемента, который ожидается
             } catch (TimeoutException e) {
                 Assert.fail("Элемент не появился за отведенное время");
             }
-            driver.findElement(authorizationPage.getEnterInscript());
+            driver.findElement(authorizationPage.getEnterScript());
             System.out.println("Пользователь успешно зарегистрирован");
             String token = User.login(email, password);
 
