@@ -21,7 +21,7 @@ public class User  {
                 .header("Content-type", "application/json")
                 .body(requestBody.toString())
                 .when()
-                .post(BrowserChose.API_REGISTER_URL);
+                .post(TestConstants.API_REGISTER_URL);
     }
 
     @Step("Вход поль зователя по API")
@@ -33,7 +33,7 @@ public class User  {
                 .header("Content-type", "application/json")
                 .body(requestBody.toString())
                 .when()
-                .post(BrowserChose.API_LOGIN_URL);
+                .post(TestConstants.API_LOGIN_URL);
 
         return response.getBody()
                 .jsonPath()
@@ -48,7 +48,7 @@ public class User  {
         given()
                 .auth().oauth2(accessCode)
                 .when()
-                .delete(BrowserChose.API_DELETE_USER_URL);
+                .delete(TestConstants.API_DELETE_USER_URL);
 
     }
 }

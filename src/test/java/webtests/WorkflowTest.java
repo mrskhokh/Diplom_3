@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import webpages.AccountProfilePage;
 import webpages.AuthorizationPage;
 import webpages.MainPage;
-import webtestutils.BrowserChose;
+import webtestutils.TestConstants;
 import webtestutils.TestUtils;
 import webtestutils.User;
 
@@ -22,9 +22,10 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
+import static webtestutils.BrowserChose.getDriver;
 
 @RunWith(Parameterized.class)
-public class WorkflowTest extends BrowserChose {
+public class WorkflowTest  {
     private final String email;
 
     private final String password;
@@ -51,7 +52,7 @@ public class WorkflowTest extends BrowserChose {
         User.create(email, password, name);
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(BrowserChose.MAIN_PAGE_URL);
+        driver.get(TestConstants.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
 
@@ -77,7 +78,7 @@ public class WorkflowTest extends BrowserChose {
 
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(BrowserChose.MAIN_PAGE_URL);
+        driver.get(TestConstants.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
 
 
@@ -97,7 +98,7 @@ public class WorkflowTest extends BrowserChose {
     public void mainLinkTest() {
         driver = getDriver();
         // переход на страницу регистрации приложения
-        driver.get(BrowserChose.MAIN_PAGE_URL);
+        driver.get(TestConstants.MAIN_PAGE_URL);
 
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();

@@ -6,7 +6,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,18 +13,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import webpages.AuthorizationPage;
 import webpages.RegistrationPage;
 import webtestutils.BrowserChose;
+import webtestutils.TestConstants;
 import webtestutils.TestUtils;
 import webtestutils.User;
-
 
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.junit.Assert.assertEquals;
-
 @RunWith(Parameterized.class)
-public class RegistrationTest extends BrowserChose {
+public class RegistrationTest {
     private final String name;
     private final String email;
     private final String password;
@@ -52,9 +49,9 @@ public class RegistrationTest extends BrowserChose {
     @DisplayName("Тест регистрации")
     @Test
     public void registrationTestCases() {
-        driver = getDriver();
+        driver = BrowserChose.getDriver();
         // переход на страницу регистрации приложения
-        driver.get(BrowserChose.REGISTRATION_PAGE_URL);
+        driver.get(TestConstants.REGISTRATION_PAGE_URL);
         //Создаем объект страницы
         RegistrationPage registrationPage = new RegistrationPage(driver);
         registrationPage.setName(name);

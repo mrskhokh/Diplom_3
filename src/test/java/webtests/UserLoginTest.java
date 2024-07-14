@@ -15,7 +15,7 @@ import webpages.AccountProfilePage;
 import webpages.AuthorizationPage;
 import webpages.MainPage;
 import webpages.RegistrationPage;
-import webtestutils.BrowserChose;
+import webtestutils.TestConstants;
 import webtestutils.TestUtils;
 import webtestutils.User;
 
@@ -24,9 +24,10 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
+import static webtestutils.BrowserChose.getDriver;
 
 @RunWith(Parameterized.class)
-public class UserLoginTest extends BrowserChose {
+public class UserLoginTest {
 
     private final String email;
     private final String password;
@@ -55,7 +56,7 @@ public class UserLoginTest extends BrowserChose {
         driver = getDriver();
 
         // переход на страницу регистрации приложения
-        driver.get(BrowserChose.MAIN_PAGE_URL);
+        driver.get(TestConstants.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.accountEnterButtonClick();
         authorizationPage.setEmail(email);
@@ -77,7 +78,7 @@ public class UserLoginTest extends BrowserChose {
     public void mainPageProfileCabinetLoginTest() {
         User.create(email, password, name);
         driver = getDriver();
-        driver.get(BrowserChose.MAIN_PAGE_URL);
+        driver.get(TestConstants.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
         authorizationPage.setEmail(email);
@@ -100,7 +101,7 @@ public class UserLoginTest extends BrowserChose {
     public void registrationPageLoginTest() {
         User.create(email, password, name);
         driver = getDriver();
-        driver.get(BrowserChose.REGISTRATION_PAGE_URL);
+        driver.get(TestConstants.REGISTRATION_PAGE_URL);
         RegistrationPage registrationPage = new RegistrationPage(driver);
         AuthorizationPage authorizationPage = registrationPage.loginLinkClick();
         authorizationPage.setEmail(email);
@@ -122,7 +123,7 @@ public class UserLoginTest extends BrowserChose {
     public void userLogoutTest() {
         User.create(email, password, name);
         driver = getDriver();
-        driver.get(BrowserChose.MAIN_PAGE_URL);
+        driver.get(TestConstants.MAIN_PAGE_URL);
         MainPage mainpage = new MainPage(driver);
         AuthorizationPage authorizationPage = mainpage.profileCabinetLinkClick();
         authorizationPage.setEmail(email);
