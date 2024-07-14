@@ -4,37 +4,179 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3593b-5aef-4fe3-8949-836f9c8b0005" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="1eb3593b-5aef-4fe3-8949-836f9c8b0005" name="Changes" comment="TestConstants added, Browser choose removed extending in test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0e3f7784-17b4-42c0-9287-1f94452f6646-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/210d1028-cd9f-4f4d-8590-b01073b40a55-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/23243f7b-de55-475e-bb43-5318a195be5e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/41f1e025-01c1-4721-baab-bc8d7b747373-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/58364762-e8d3-47b4-997e-478dc0db40e3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/94731692-95e3-4a8c-b578-ade6a6a89bdc-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b6851fda-01d4-47f9-b616-5d5be404e1e7-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f8ba032b-d561-4796-a89d-2c2392973722-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fae4a872-beb1-4272-bd91-d063fca7d64c-result.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2iKsypVs9X4f9G62BWjjHGcY5jL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "khokh",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.RegistrationTest.RegistrationTestCases.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegistrationTest.registrationTestCases.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.MainPadeProfileCabenetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.MainPageProfileCabenetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.MainPageProfileCabinetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.RegistrationPageLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.mainPageProfileCabenetLoginTest (1).executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.UserLoginTest.mainPageProfileCabenetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.mainPageProfileCabinetLoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserLoginTest.userLogoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.ConstructorLinkTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.constructorLinkTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.ingredientsSectionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WorkflowTest.mainLinkTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in Diplom_3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.web_tests in Diplom_3.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [clean,test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [io.qameta.allure:allure-maven:2.10.0:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [io.qameta.allure:allure-maven:2.10.0:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [io.qameta.allure:allure-maven:2.10.0:serve].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Diplom_3 [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop3&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/levin/IdeaProjects/Diplom_3/src/test/resources&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\levin\IdeaProjects\Diplom_3\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="clean test" />
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.WorkflowTest.ingredientsSectionTest">
+    <configuration name="RegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webtests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="web_tests" />
+      <option name="MAIN_CLASS_NAME" value="webtests.RegistrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationTest.registrationTestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webtests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webtests" />
+      <option name="MAIN_CLASS_NAME" value="webtests.RegistrationTest" />
+      <option name="METHOD_NAME" value="registrationTestCases" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkflowTest.constructorLinkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webtests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="web_tests" />
+      <option name="MAIN_CLASS_NAME" value="webtests.WorkflowTest" />
+      <option name="METHOD_NAME" value="constructorLinkTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkflowTest.ingredientsSectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webtests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="web_tests" />
+      <option name="MAIN_CLASS_NAME" value="webtests.WorkflowTest" />
+      <option name="METHOD_NAME" value="ingredientsSectionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="web_tests in Diplom_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/web_tests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WorkflowTest.ingredientsSectionTest" />
+        <item itemvalue="JUnit.RegistrationTest.registrationTestCases" />
+        <item itemvalue="JUnit.RegistrationTest" />
+        <item itemvalue="JUnit.web_tests in Diplom_3" />
+        <item itemvalue="JUnit.WorkflowTest.constructorLinkTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,6 +186,103 @@
       <option name="presentableId" value="Default" />
       <updated>1719250862086</updated>
     </task>
+    <task id="LOCAL-00001" summary="all notes fixes">
+      <option name="closed" value="true" />
+      <created>1720289694971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720289694971</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sleeps and locator removed">
+      <option name="closed" value="true" />
+      <created>1720703254223</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720703254223</updated>
+    </task>
+    <task id="LOCAL-00003" summary="expected and actual asserts changed">
+      <option name="closed" value="true" />
+      <created>1720704595379</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720704595379</updated>
+    </task>
+    <task id="LOCAL-00004" summary="allur report actual">
+      <option name="closed" value="true" />
+      <created>1720714419384</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720714419384</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ingredients choise changed, + new allure report">
+      <option name="closed" value="true" />
+      <created>1720717157059</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720717157059</updated>
+    </task>
+    <task id="LOCAL-00006" summary="TestConstants added, Browser choose removed extending in test">
+      <option name="closed" value="true" />
+      <created>1720936897996</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720936897996</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="all notes fixes" />
+    <MESSAGE value="sleeps and locator removed" />
+    <MESSAGE value="expected and actual asserts changed" />
+    <MESSAGE value="allur report actual" />
+    <MESSAGE value="ingredients choise changed, + new allure report" />
+    <MESSAGE value="TestConstants added, Browser choose removed extending in test" />
+    <option name="LAST_COMMIT_MESSAGE" value="TestConstants added, Browser choose removed extending in test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
+          <line>70</line>
+          <properties class="webtests.UserLoginTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
+          <line>91</line>
+          <properties class="webtests.UserLoginTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
