@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb3593b-5aef-4fe3-8949-836f9c8b0005" name="Changes" comment="ingredients choise changed, + new allure report">
-      <change afterPath="$PROJECT_DIR$/src/test/java/webtestutils/TestConstants.java" afterDir="false" />
+    <list default="true" id="1eb3593b-5aef-4fe3-8949-836f9c8b0005" name="Changes" comment="TestConstants added, Browser choose removed extending in test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/WorkflowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/WorkflowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtestutils/BrowserChose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtestutils/BrowserChose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0e3f7784-17b4-42c0-9287-1f94452f6646-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/210d1028-cd9f-4f4d-8590-b01073b40a55-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/23243f7b-de55-475e-bb43-5318a195be5e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/41f1e025-01c1-4721-baab-bc8d7b747373-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/58364762-e8d3-47b4-997e-478dc0db40e3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/94731692-95e3-4a8c-b578-ade6a6a89bdc-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/allure-results/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b6851fda-01d4-47f9-b616-5d5be404e1e7-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f8ba032b-d561-4796-a89d-2c2392973722-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fae4a872-beb1-4272-bd91-d063fca7d64c-result.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720717157059</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="TestConstants added, Browser choose removed extending in test">
+      <option name="closed" value="true" />
+      <created>1720936897996</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720936897996</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,29 +243,30 @@
     <MESSAGE value="expected and actual asserts changed" />
     <MESSAGE value="allur report actual" />
     <MESSAGE value="ingredients choise changed, + new allure report" />
-    <option name="LAST_COMMIT_MESSAGE" value="ingredients choise changed, + new allure report" />
+    <MESSAGE value="TestConstants added, Browser choose removed extending in test" />
+    <option name="LAST_COMMIT_MESSAGE" value="TestConstants added, Browser choose removed extending in test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
-          <line>80</line>
+          <line>57</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
-          <line>81</line>
+          <line>58</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
-          <line>87</line>
+          <line>64</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
-          <line>93</line>
+          <line>70</line>
           <properties class="webtests.UserLoginTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -260,7 +275,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/webtests/UserLoginTest.java</url>
-          <line>114</line>
+          <line>91</line>
           <properties class="webtests.UserLoginTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

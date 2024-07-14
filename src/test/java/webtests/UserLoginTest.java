@@ -49,29 +49,6 @@ public class UserLoginTest {
                 });
     }
 
-    @DisplayName("Тест входа в личный кабинет с главный страницы")
-    @Test
-    public void mainPageProfileCabenetLoginTest() {
-        User.create(email, password, name);
-        driver = getDriver();
-
-        // переход на страницу регистрации приложения
-        driver.get(TestConstants.MAIN_PAGE_URL);
-        MainPage mainpage = new MainPage(driver);
-        AuthorizationPage authorizationPage = mainpage.accountEnterButtonClick();
-        authorizationPage.setEmail(email);
-        authorizationPage.setPassword(password);
-
-        MainPage mainPage = authorizationPage.loginButtonClick();
-        AccountProfilePage accountProfilePage = mainPage.authorizedProfileCabinetLinkClick();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        try {
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(accountProfilePage.getNameField())); // Замените "elementId" на идентификатор элемента, который ожидается
-        } catch (TimeoutException e) {
-            Assert.fail("Элемент не появился за отведенное время");
-        }
-        assertEquals(name,accountProfilePage.getNameValue());
-    }
 
     @DisplayName("Тест входа в личный кабинет с главный страницы")
     @Test
